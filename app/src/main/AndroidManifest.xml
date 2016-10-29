@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ivan.utspmobpro1137050118">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/UTSPMobpro1137050118"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.ivan.utspmobpro1137050118.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.example.ivan.utspmobpro1137050118.LoginActivity"/>
+
+        <activity
+            android:name="com.example.ivan.utspmobpro1137050118.PesanFragment"
+            android:label="Pemesanan"
+            android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ivan.utspmobpro1137050118.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.example.ivan.utspmobpro1137050118.KeranjangPesanan"
+            android:label="@string/Pemesanan"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.example.ivan.utspmobpro1137050118.HistoryPesanan"
+            android:label="History"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ivan.utspmobpro1137050118.MainActivity" />
+
+
+        </activity>
+        <activity android:name="com.example.ivan.utspmobpro1137050118.BookingFragment"/>
+        <activity android:name="com.example.ivan.utspmobpro1137050118.AboutFragment"/>
+        <activity android:name=".Coffeein"/>
+
+
+
+
+
+    </application>
+
+</manifest>
